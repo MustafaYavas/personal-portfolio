@@ -1,0 +1,45 @@
+.section-header {
+  font-weight: 600;
+
+  h3 {
+    width: 100%;
+    color: var(--text-gray);
+    font-size: 8rem;
+    opacity: 0.1;
+  }
+
+  p {
+    width: 100%;
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 2.5rem;
+  }
+
+  .heading-seperator {
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary);
+  }
+
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      top: 30%;
+    }
+    .heading-seperator {
+      top: 67%;
+    }
+  }
+}

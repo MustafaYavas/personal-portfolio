@@ -14,7 +14,7 @@
   color: white;
 
   &:hover {
-    background-color: rgba(var(--primary), 0.7);
+    background-color: var(--primary-dark);
   }
 }
 
@@ -34,6 +34,6 @@
   color: white;
 
   &:hover {
-    background-color: rgba(var(--secondary), 0.7);
+    background-color: var(--secondary-dark);
   }
 }

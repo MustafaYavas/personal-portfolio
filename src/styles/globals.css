@@ -6,7 +6,11 @@
   --bg-color-1: #212529;
   --bg-color-2: #343a40;
   --primary: #dc3545;
+  --primary-dark: #e41a2e;
   --secondary: #343a40;
+  --secondary-dark: #393d41;
+  --text-gray: #8e9a9d;
+  --text-gray-2: #ffffff80;
 }
 
 .linkedIn-link:hover {
@@ -21,6 +25,12 @@
 
 .main {
   padding: 0 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 0 1.5rem;
+  }
 }
 
 .flex-center {

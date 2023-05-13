@@ -5,7 +5,7 @@ import styles from './Hero.module.scss';
 
 const Hero = () => {
   return (
-    <section className={`h-screen flex-center ${styles.hero}`}>
+    <section className={`min-h-screen flex-center ${styles.hero}`}>
       <video className="videoTag" autoPlay loop muted>
         <source src="/assets/videos/video.mp4" type="video/mp4" />
       </video>
