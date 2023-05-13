@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color-1: #212529;
+  --bg-color-2: #343a40;
+  --primary: #dc3545;
+  --secondary: #343a40;
+}
+
+.linkedIn-link:hover {
+  color: #0a66c2 !important;
+  transition: 0.1s;
+}
+
+.github-link:hover {
+  color: #666666 !important;
+  transition: 0.1s;
+}
+
+.main {
+  padding: 0 4rem;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}

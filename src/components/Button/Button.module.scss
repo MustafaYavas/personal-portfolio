@@ -1,0 +1,39 @@
+.button-primary {
+  border: 2px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+
+  &:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+}
+
+.button-primary-fill {
+  background-color: var(--primary);
+  color: white;
+
+  &:hover {
+    background-color: rgba(var(--primary), 0.7);
+  }
+}
+
+.button-secondary {
+  border: 2px solid var(--secondary);
+  background-color: transparent;
+  color: var(--secondary);
+
+  &:hover {
+    background-color: var(--secondary);
+    color: white;
+  }
+}
+
+.button-secondary-fill {
+  background-color: var(--secondary);
+  color: white;
+
+  &:hover {
+    background-color: rgba(var(--secondary), 0.7);
+  }
+}
