@@ -1,11 +1,23 @@
+'use client';
+
+import { useState } from 'react';
 import Icon from '../Icon';
 import Menu from './Menu';
 import styles from './Navbar.module.scss';
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  window.onscroll = () => {
+    setIsScrolled(window.pageYOffset > 50 ? false : true);
+    return () => (window.onscroll = null);
+  };
+
   return (
     <header
-      className={`px-3 flex-between text-white ${styles['header-container']}`}
+      className={`px-3 flex-between text-white ${styles['header-container']} ${
+        isScrolled ? 'bg-zinc-900' : 'bg-transparent'
+      }`}
     >
       <h1 className="text-xl md:text-3xl font-semibold">Mustafa</h1>
 

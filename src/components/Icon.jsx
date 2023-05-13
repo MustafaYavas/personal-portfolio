@@ -1,4 +1,5 @@
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { IoIosArrowDown } from 'react-icons/io';
 
 const Icon = ({ name, className, size, color }) => {
   // NAVBAR
@@ -13,6 +14,14 @@ const Icon = ({ name, className, size, color }) => {
   } else if (name === 'AiFillGithub') {
     return (
       <AiFillGithub
+        className={className}
+        size={size}
+        color={color ? color : 'black'}
+      />
+    );
+  } else if (name === 'IoIosArrowDown') {
+    return (
+      <IoIosArrowDown
         className={className}
         size={size}
         color={color ? color : 'black'}
