@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Icon from '../Icon';
 import Menu from './Menu';
 import styles from './Navbar.module.scss';
@@ -10,10 +10,12 @@ import Link from 'next/link';
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  window.onscroll = () => {
-    setIsScrolled(window.pageYOffset > 50 ? true : false);
-    return () => (window.onscroll = null);
-  };
+  useEffect(() => {
+    window.onscroll = () => {
+      setIsScrolled(window.pageYOffset > 50 ? true : false);
+      return () => (window.onscroll = null);
+    };
+  }, []);
 
   return (
     <header
