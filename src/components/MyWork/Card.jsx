@@ -1,3 +1,7 @@
+'use client';
+
+import Aos from 'aos';
+import { useEffect } from 'react';
 import Image from 'next/image';
 
 import styles from './Card.module.scss';
@@ -5,9 +9,15 @@ import Icon from '../Icon';
 import Link from 'next/link';
 
 const Card = ({ img, title, text, stack, left, href, live }) => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <div
       className={`grid grid-cols-1 md:grid-cols-2 md:px-28 mb-28 w-full ${styles.card}`}
+      data-aos={left ? 'fade-right' : 'fade-left'}
+      data-aos-once="true"
     >
       <Image
         src={img}

@@ -1,8 +1,21 @@
+'use client';
+
+import Aos from 'aos';
+import { useEffect } from 'react';
+
 import styles from './SkillBar.module.scss';
 
-const SkillBar = ({ skill, percent }) => {
+const SkillBar = ({ skill, percent, left }) => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
-    <div className="flex-start flex-col gap-3">
+    <div
+      className="flex-start flex-col gap-3"
+      data-aos={left ? 'fade-right' : 'fade-left'}
+      data-aos-once="true"
+    >
       <div className="flex-between w-full">
         <label htmlFor="skill" className="text-white">
           {skill}

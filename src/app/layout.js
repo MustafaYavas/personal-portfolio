@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import 'aos/dist/aos.css';
 
 import Navbar from '@/components/Navbar/Navbar';
 import '../styles/globals.css';

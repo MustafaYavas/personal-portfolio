@@ -1,8 +1,17 @@
+'use client';
+
+import Aos from 'aos';
+import { useEffect } from 'react';
+
 import Button from '../Button/Button';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import styles from './About.module.scss';
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <section
       id="about"
@@ -12,7 +21,11 @@ const About = () => {
         <SectionHeader text="Know Me More" subText="about me" />
 
         <div className="grid grid-cols-1 md:grid-cols-5 my-12 gap-6">
-          <div className="col-span-3">
+          <div
+            className="col-span-3"
+            data-aos="fade-right"
+            data-aos-once="true"
+          >
             <h2 className="text-3xl text-white font-semibold mb-4">
               I'm
               <span style={{ color: 'var(--primary)' }}> Mustafa Yavaş, </span>a
@@ -39,7 +52,11 @@ const About = () => {
             </p>
           </div>
 
-          <div className="text-white col-span-2 ">
+          <div
+            className="text-white col-span-2 "
+            data-aos="fade-left"
+            data-aos-once="true"
+          >
             <p className="py-3 border-b border-gray-600">
               <span className="font-semibold mr-2">Name:</span>
               <span>Mustafa Yavaş</span>
@@ -72,6 +89,8 @@ const About = () => {
         <div
           className="flex justify-center items-center gap-10"
           style={{ color: 'var(--text-gray-2)' }}
+          data-aos="fade-up"
+          data-aos-once="true"
         >
           <div className="text-center border-r border-gray-600 pr-10">
             <h4 className="text-3xl md:text-5xl">2+</h4>

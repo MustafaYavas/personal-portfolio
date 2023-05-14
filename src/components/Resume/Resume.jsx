@@ -24,18 +24,21 @@ const Resume = () => {
               title="Bachelor Degree"
               subTitle="Pamukkale University"
               className="mb-5"
+              left
             />
             <Card
               year="2021 - 2021"
               title="Erasmus +"
               subTitle="Czestochowa University of Technology"
               className="mb-5"
+              left
             />
             <Card
               year="2013 - 2017"
               title="High school"
               subTitle="Denizli High School"
               className="mb-5"
+              left
             />
           </div>
 
@@ -62,12 +65,11 @@ const Resume = () => {
         <div className="mt-10 mb-5">
           <h2 className="text-white text-2xl font-semibold mb-5">My Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <SkillBar skill="HTML / CS" percent="90" />
+            <SkillBar skill="HTML / CS" percent="90" left />
             <SkillBar skill="JavaScript / TypeScript" percent="90" />
-
-            <SkillBar skill="Node.js" percent="70" />
+            <SkillBar skill="Node.js" percent="70" left />
             <SkillBar skill="React.js" percent="85" />
-            <SkillBar skill="Next.js" percent="70" />
+            <SkillBar skill="Next.js" percent="70" left />
             <SkillBar skill="Java" percent="50" />
           </div>
         </div>
