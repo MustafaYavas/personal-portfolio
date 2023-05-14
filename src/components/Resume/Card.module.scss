@@ -1,0 +1,31 @@
+.card {
+  background-color: #111418;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 4px;
+
+  .year {
+    background-color: var(--primary);
+    width: fit-content;
+    color: white;
+    padding: 0.1rem 0.25rem;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .title {
+    color: white;
+    font-size: 21px;
+  }
+
+  .sub-title {
+    color: var(--primary);
+    font-size: 16px;
+  }
+
+  .text {
+    color: var(--text-gray);
+  }
+}
