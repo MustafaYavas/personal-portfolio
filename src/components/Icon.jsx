@@ -1,4 +1,9 @@
-import { AiFillLinkedin, AiFillGithub, AiFillHtml5 } from 'react-icons/ai';
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiFillHtml5,
+  AiOutlineLink,
+} from 'react-icons/ai';
 import { IoIosArrowDown } from 'react-icons/io';
 import { HiComputerDesktop } from 'react-icons/hi2';
 import { FaServer } from 'react-icons/fa';
@@ -60,6 +65,17 @@ const Icon = ({ name, className, size, color }) => {
   } else if (name === 'BsGit') {
     return (
       <BsGit
+        className={className}
+        size={size}
+        color={color ? color : 'black'}
+      />
+    );
+  }
+
+  // MY WORK
+  else if (name === 'AiOutlineLink') {
+    return (
+      <AiOutlineLink
         className={className}
         size={size}
         color={color ? color : 'black'}

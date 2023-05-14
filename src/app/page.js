@@ -1,5 +1,6 @@
 import About from '@/components/About/About';
 import Hero from '@/components/Hero/Hero';
+import MyWork from '@/components/MyWork/MyWork';
 import Resume from '@/components/Resume/Resume';
 import WhatIDo from '@/components/WhatIDo/WhatIDo';
 
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <WhatIDo />
       <Resume />
+      <MyWork />
     </div>
   );
 }
