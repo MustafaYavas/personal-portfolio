@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Button from '../Button/Button';
 import Icon from '../Icon';
 import TypeWriter from '../TypeWriter';
@@ -20,12 +21,14 @@ const Hero = () => {
 
         <Button text="Hire Me" primary link href="#contact" />
 
-        <Icon
-          className={styles['scroll-arrow']}
-          name="IoIosArrowDown"
-          size="32"
-          color="white"
-        />
+        <Link href="#about">
+          <Icon
+            className={styles['scroll-arrow']}
+            name="IoIosArrowDown"
+            size="32"
+            color="white"
+          />
+        </Link>
       </div>
     </section>
   );
