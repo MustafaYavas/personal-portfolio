@@ -5,7 +5,7 @@ import styles from './Hero.module.scss';
 
 const Hero = () => {
   return (
-    <section className={`min-h-screen flex-center ${styles.hero}`}>
+    <section id="home" className={`min-h-screen flex-center ${styles.hero}`}>
       <video className="videoTag" autoPlay loop muted>
         <source src="/assets/videos/video.mp4" type="video/mp4" />
       </video>
@@ -18,7 +18,7 @@ const Hero = () => {
           based in Denizli, Turkey
         </h3>
 
-        <Button text="Hire Me" primary />
+        <Button text="Hire Me" primary link href="#contact" />
 
         <Icon
           className={styles['scroll-arrow']}

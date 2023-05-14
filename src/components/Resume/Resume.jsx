@@ -7,6 +7,7 @@ import SkillBar from './SkillBar';
 const Resume = () => {
   return (
     <section
+      id="resume"
       className={`min-h-screen flex-center ${styles['resume-container']}`}
     >
       <div className="main my-10 w-full">

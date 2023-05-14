@@ -5,6 +5,7 @@ import styles from './About.module.scss';
 const About = () => {
   return (
     <section
+      id="about"
       className={`min-h-screen flex-center ${styles['about-container']}`}
     >
       <div className="main my-10">

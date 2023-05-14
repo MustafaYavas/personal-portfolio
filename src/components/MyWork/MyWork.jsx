@@ -4,7 +4,10 @@ import styles from './MyWork.module.scss';
 
 const MyWork = () => {
   return (
-    <div className={`min-h-screen flex-center ${styles['my-work-container']}`}>
+    <section
+      id="portfolio"
+      className={`min-h-screen flex-center ${styles['my-work-container']}`}
+    >
       <div className="main my-10 w-full">
         <SectionHeader text="My Work" subText="portfolio" />
 
@@ -50,7 +53,7 @@ const MyWork = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

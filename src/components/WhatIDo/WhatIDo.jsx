@@ -4,7 +4,10 @@ import styles from './WhatIDo.module.scss';
 
 const WhatIDo = () => {
   return (
-    <div className={`min-h-screen flex-center ${styles['whatido-container']}`}>
+    <section
+      id="do"
+      className={`min-h-screen flex-center ${styles['whatido-container']}`}
+    >
       <div className="my-10">
         <SectionHeader text="What I Do?" subText="services" />
 
@@ -35,7 +38,7 @@ const WhatIDo = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -33,12 +33,24 @@ const Navbar = () => {
       </Link>
 
       <ul className={`flex-center gap-8 font-medium ${styles['nav-link']}`}>
-        <li>Home</li>
-        <li>About</li>
-        <li>What I Do</li>
-        <li>Resume</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
+        <li>
+          <Link href="#home">Home</Link>
+        </li>
+        <li>
+          <Link href="#about">About</Link>
+        </li>
+        <li>
+          <Link href="#do">What I Do</Link>
+        </li>
+        <li>
+          <Link href="#resume">Resume</Link>
+        </li>
+        <li>
+          <Link href="#portfolio">Portfolio</Link>
+        </li>
+        <li>
+          <Link href="#contact">Contact</Link>
+        </li>
       </ul>
 
       <div className="flex-center gap-5">

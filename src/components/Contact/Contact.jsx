@@ -17,7 +17,10 @@ const Contact = () => {
   };
 
   return (
-    <div className={`min-h-screen flex-center ${styles['contact-container']}`}>
+    <section
+      id="contact"
+      className={`min-h-screen flex-center ${styles['contact-container']}`}
+    >
       <div className="main my-10 w-full">
         <SectionHeader text="Get in Touch" subText="contact" />
 
@@ -67,7 +70,7 @@ const Contact = () => {
           />
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 
