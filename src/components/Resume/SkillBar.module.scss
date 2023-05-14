@@ -1,0 +1,16 @@
+.progress-bar {
+  position: relative;
+  display: inline-block;
+  height: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+
+  &::-webkit-progress-value {
+    background: var(--primary);
+  }
+
+  &::-webkit-progress-bar {
+    background: #111418;
+  }
+}

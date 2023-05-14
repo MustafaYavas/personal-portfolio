@@ -1,6 +1,8 @@
+import Button from '../Button/Button';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Card from './Card';
 import styles from './Resume.module.scss';
+import SkillBar from './SkillBar';
 
 const Resume = () => {
   return (
@@ -54,6 +56,23 @@ const Resume = () => {
               className="mb-5"
             />
           </div>
+        </div>
+
+        <div className="mt-10 mb-5">
+          <h2 className="text-white text-2xl font-semibold mb-5">My Skills</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <SkillBar skill="HTML / CS" percent="90" />
+            <SkillBar skill="JavaScript / TypeScript" percent="90" />
+
+            <SkillBar skill="Node.js" percent="70" />
+            <SkillBar skill="React.js" percent="85" />
+            <SkillBar skill="Next.js" percent="70" />
+            <SkillBar skill="Java" percent="50" />
+          </div>
+        </div>
+
+        <div className="mt-20 mb-10 text-center">
+          <Button text="Download CV" link href="/files/cv.pdf" />
         </div>
       </div>
     </section>
