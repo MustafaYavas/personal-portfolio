@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Card from './Card';
 import styles from './MyWork.module.scss';
@@ -11,10 +12,22 @@ const MyWork = () => {
       <div className="main my-10 w-full">
         <SectionHeader text="My Work" subText="portfolio" />
 
-        <div className="mt-10">
+        <p className="text-center mt-5 text-lg font-medium text-white">
+          Some of my works are listed below. You can see more on my{' '}
+          <Link
+            href="https://github.com/MustafaYavas"
+            target="_blank"
+            className={styles.link}
+          >
+            GitHub
+          </Link>{' '}
+          profile.
+        </p>
+
+        <div className="mt-20">
           <Card
             img="/assets/images/weather.png"
-            title="Weather App"
+            title="Cloudy"
             text="A weather site that lets users know five-day forecasts. The website provides and interface for 
             searching cities"
             stack={['Next.js', 'SASS']}

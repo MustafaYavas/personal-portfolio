@@ -1,3 +1,11 @@
 .my-work-container {
   background-color: var(--bg-color-2);
+
+  .link {
+    color: var(--primary);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
