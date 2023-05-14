@@ -52,7 +52,7 @@ const Contact = () => {
             required
           />
           <textarea
-            placeholder="What do you wanna say?"
+            placeholder="What do you want to tell?"
             className="w-3/4 mb-5"
             rows={5}
             name="text"
