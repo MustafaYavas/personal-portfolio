@@ -1,4 +1,5 @@
 import About from '@/components/About/About';
+import Contact from '@/components/Contact/Contact';
 import Hero from '@/components/Hero/Hero';
 import MyWork from '@/components/MyWork/MyWork';
 import Resume from '@/components/Resume/Resume';
@@ -17,6 +18,7 @@ export default function Home() {
       <WhatIDo />
       <Resume />
       <MyWork />
+      <Contact />
     </div>
   );
 }
