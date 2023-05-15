@@ -25,6 +25,10 @@
     .scroll-arrow {
       height: 100px;
       position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
       bottom: 50px;
       animation-name: move-down;
       animation-duration: 1.25s;

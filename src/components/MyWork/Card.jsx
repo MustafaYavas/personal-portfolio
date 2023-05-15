@@ -40,7 +40,9 @@ const Card = ({ img, title, text, stack, left, href, live }) => {
 
         <div className="flex-center gap-10 mb-10">
           {stack.map((s) => (
-            <span className="text-lg font-medium">{s}</span>
+            <span key={s} className="text-lg font-medium">
+              {s}
+            </span>
           ))}
         </div>
 

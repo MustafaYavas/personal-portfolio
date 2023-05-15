@@ -13,7 +13,7 @@ const Menu = () => {
     <div className="flex flex-col">
       <div
         onClick={handleShowMenu}
-        className={`flex lg:hidden ${styles['menu-btn']} ${
+        className={`flex md:hidden ${styles['menu-btn']} ${
           showMenu ? styles.open : ''
         }`}
       >
