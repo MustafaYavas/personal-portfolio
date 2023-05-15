@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 
 import styles from './Menu.module.scss';
 
@@ -7,6 +8,10 @@ const Menu = () => {
 
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
+  };
+
+  const handleClickItem = () => {
+    setShowMenu(false);
   };
 
   return (
@@ -20,12 +25,24 @@ const Menu = () => {
 
       {showMenu && (
         <ul className={`block ${styles['nav-menu']}`}>
-          <li className="border-b border-gray-600">Home</li>
-          <li className="border-b border-gray-600">About</li>
-          <li className="border-b border-gray-600">What I Do</li>
-          <li className="border-b border-gray-600">Resume</li>
-          <li className="border-b border-gray-600">Portfolio</li>
-          <li>Contact</li>
+          <li className="border-b border-gray-600" onClick={handleClickItem}>
+            <Link href="#home">Home</Link>
+          </li>
+          <li className="border-b border-gray-600" onClick={handleClickItem}>
+            <Link href="#about">About</Link>
+          </li>
+          <li className="border-b border-gray-600" onClick={handleClickItem}>
+            <Link href="#do">What I Do</Link>
+          </li>
+          <li className="border-b border-gray-600" onClick={handleClickItem}>
+            <Link href="#resume">Resume</Link>
+          </li>
+          <li className="border-b border-gray-600" onClick={handleClickItem}>
+            <Link href="#portfolio">Portfolio</Link>
+          </li>
+          <li onClick={handleClickItem}>
+            <Link href="#contact">Contact</Link>
+          </li>
         </ul>
       )}
     </div>
