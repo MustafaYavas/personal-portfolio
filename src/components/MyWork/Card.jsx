@@ -13,7 +13,11 @@ const Card = ({ img, title, text, stack, left, href, live }) => {
     Aos.init({ duration: 1500 });
   }, []);
 
-  let imgClass = `${left ? 'md:order-1' : 'md:order-2'}`;
+  let imgClass = `${
+    left
+      ? 'min-[992px]:order-1 min-[992px]:justify-start'
+      : 'min-[992px]:order-2 min-[992px]:justify-end'
+  }`;
   let textClass = 'order-2 md:order-1';
 
   return (
@@ -23,7 +27,7 @@ const Card = ({ img, title, text, stack, left, href, live }) => {
       data-aos-once="true"
     >
       <div
-        className={`flex justify-center min-[992px]:justify-start items-start mb-4 min-[992px]:mb-0 ${imgClass}`}
+        className={`flex justify-center items-start mb-4 min-[992px]:mb-0 ${imgClass}`}
       >
         <Image
           src={img}
