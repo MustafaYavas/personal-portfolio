@@ -17,10 +17,10 @@ const About = () => {
       id="about"
       className={`min-h-screen flex-center ${styles['about-container']}`}
     >
-      <div className="main my-10">
+      <div className="my-10">
         <SectionHeader text="Know Me More" subText="about me" />
 
-        <div className="grid grid-cols-1 md:grid-cols-5 my-12 gap-6">
+        <div className="main grid grid-cols-1 md:grid-cols-5 gap-6 mt-10 md:mt-20">
           <div
             className="col-span-3"
             data-aos="fade-right"
@@ -87,7 +87,7 @@ const About = () => {
         </div>
 
         <div
-          className="flex justify-center items-center gap-10"
+          className="flex justify-center items-center gap-10 main"
           style={{ color: 'var(--text-gray-2)' }}
           data-aos="fade-up"
           data-aos-once="true"

@@ -9,24 +9,13 @@
   }
 
   p {
-    width: 100%;
+    width: fit-content;
     text-align: center;
     top: 35%;
     left: 50%;
     transform: translate(-50%, 0);
     font-size: 2.5rem;
-  }
-
-  .heading-seperator {
-    position: absolute;
-    text-align: center;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: block;
-    width: 100px;
-    height: 3px;
-    background-color: var(--primary);
+    border-bottom: 2px solid var(--primary);
   }
 
   @media screen and (max-width: 768px) {

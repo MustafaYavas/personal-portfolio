@@ -9,61 +9,63 @@ const MyWork = () => {
       id="portfolio"
       className={`min-h-screen flex-center ${styles['my-work-container']}`}
     >
-      <div className="main my-10 w-full">
+      <div className="my-10 w-full">
         <SectionHeader text="My Work" subText="portfolio" />
 
-        <p className="text-center mt-5 text-lg font-medium text-white">
-          Some of my works are listed below. You can see more on my{' '}
-          <Link
-            href="https://github.com/MustafaYavas"
-            target="_blank"
-            className={styles.link}
-          >
-            GitHub
-          </Link>{' '}
-          profile.
-        </p>
+        <div className="main mt-10 md:mt-20">
+          <p className="text-center mt-5 text-lg font-medium text-white">
+            Some of my works are listed below. You can see more on my{' '}
+            <Link
+              href="https://github.com/MustafaYavas"
+              target="_blank"
+              className={styles.link}
+            >
+              GitHub
+            </Link>{' '}
+            profile.
+          </p>
 
-        <div className="mt-20">
-          <Card
-            img="/assets/images/weather.png"
-            title="Cloudy"
-            text="A weather site that lets users know five-day forecasts. The website provides and interface for 
+          <div className="mt-20">
+            <Card
+              img="/assets/images/weather.png"
+              title="Cloudy"
+              text="A weather site that lets users know five-day forecasts. The website provides and interface for 
             searching cities"
-            stack={['Next.js', 'SASS']}
-            href="https://github.com/MustafaYavas/weather-app"
-            live="https://weather-cloudy.vercel.app/"
-            left
-          />
+              stack={['Next.js', 'SASS']}
+              href="https://github.com/MustafaYavas/weather-app"
+              live="https://weather-cloudy.vercel.app/"
+              left
+            />
 
-          <Card
-            img="/assets/images/kanban-board.png"
-            title="Kanban Board"
-            text="It is a tool that allows you to visualize and manage your personal or team projects more easily. 
+            <Card
+              img="/assets/images/kanban-board.png"
+              title="Kanban Board"
+              text="It is a tool that allows you to visualize and manage your personal or team projects more easily. 
             You can create your own project or join any of them and you can create new tasks for your project 
             and assign it to a member."
-            stack={['React.js', 'CSS']}
-            href="https://github.com/MustafaYavas/kanban-board"
-          />
+              stack={['React.js', 'CSS']}
+              href="https://github.com/MustafaYavas/kanban-board"
+            />
 
-          <Card
-            img="/assets/images/furniture.png"
-            title="Furny"
-            text="An e-commerce website where many products are listed in different categories. 
+            <Card
+              img="/assets/images/furniture.png"
+              title="Furny"
+              text="An e-commerce website where many products are listed in different categories. 
             Users can purchase the products they add to the cart by registering."
-            stack={['Next.js', 'SASS']}
-            left
-            href="https://github.com/MustafaYavas/e-commerce-template"
-            live="https://furny.vercel.app/"
-          />
+              stack={['Next.js', 'SASS']}
+              left
+              href="https://github.com/MustafaYavas/e-commerce-template"
+              live="https://furny.vercel.app/"
+            />
 
-          <Card
-            img="/assets/images/conword.png"
-            title="ConWord"
-            text="A tool for converting Word files to PDF. It accepts .doc and .docx files only"
-            stack={['React.js', 'CSS']}
-            href="https://github.com/MustafaYavas/ConWord"
-          />
+            <Card
+              img="/assets/images/conword.png"
+              title="ConWord"
+              text="A tool for converting Word files to PDF. It accepts .doc and .docx files only"
+              stack={['React.js', 'CSS']}
+              href="https://github.com/MustafaYavas/ConWord"
+            />
+          </div>
         </div>
       </div>
     </section>

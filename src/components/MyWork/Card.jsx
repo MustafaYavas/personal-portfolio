@@ -13,27 +13,28 @@ const Card = ({ img, title, text, stack, left, href, live }) => {
     Aos.init({ duration: 1500 });
   }, []);
 
+  let imgClass = `${left ? 'md:order-1' : 'md:order-2'}`;
+  let textClass = 'order-2 md:order-1';
+
   return (
     <div
-      className={`grid grid-cols-1 md:grid-cols-2 md:px-28 mb-28 w-full ${styles.card}`}
+      className={`grid grid-cols-1 min-[992px]:grid-cols-2 md:px-28 mb-28 w-full ${styles.card}`}
       data-aos={left ? 'fade-right' : 'fade-left'}
       data-aos-once="true"
     >
-      <Image
-        src={img}
-        alt="work"
-        className={`w-full h-auto ${
-          left ? 'md:order-1' : 'md:order-2'
-        } order-1`}
-        width={0}
-        height={0}
-        sizes="100vw"
-      />
       <div
-        className={`text-white h-full flex flex-col mt-8 md:mt-0 md:px-10 ${
-          left ? 'md:order-2' : 'md:order-1'
-        }  order-2`}
+        className={`flex justify-center min-[992px]:justify-start items-start mb-4 min-[992px]:mb-0 ${imgClass}`}
       >
+        <Image
+          src={img}
+          alt="work"
+          className="w-full h-auto"
+          width={0}
+          height={0}
+          sizes="100vw"
+        />
+      </div>
+      <div className={`text-white h-full flex flex-col md:px-10 ${textClass}`}>
         <h3 className="text-2xl font-semibold text-center">{title}</h3>
 
         <p className="mt-5 mb-10 text-center">{text}</p>

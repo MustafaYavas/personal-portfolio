@@ -11,7 +11,7 @@ const WhatIDo = () => {
       <div className="my-10">
         <SectionHeader text="What I Do?" subText="services" />
 
-        <div className="main grid grid-cols-1 md:grid-cols-2 gap-16 mt-20">
+        <div className="main grid grid-cols-1 min-[992px]:grid-cols-2 gap-16 mt-10 md:mt-20">
           <Card
             icon="AiFillHtml5"
             title="Frontend Development"
