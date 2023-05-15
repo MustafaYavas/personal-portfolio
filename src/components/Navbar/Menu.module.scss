@@ -1,3 +1,12 @@
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 992px) {
+    display: none !important;
+  }
+}
+
 .menu-btn {
   position: relative;
   display: flex;

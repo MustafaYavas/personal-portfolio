@@ -10,18 +10,16 @@ const Menu = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className={styles['mobile-menu']}>
       <div
         onClick={handleShowMenu}
-        className={`flex md:hidden ${styles['menu-btn']} ${
-          showMenu ? styles.open : ''
-        }`}
+        className={` ${styles['menu-btn']} ${showMenu ? styles.open : ''}`}
       >
         <div className={`${styles['menu-btn-burger']}`}></div>
       </div>
 
       {showMenu && (
-        <ul className={`block lg:hidden ${styles['nav-menu']}`}>
+        <ul className={`block ${styles['nav-menu']}`}>
           <li className="border-b border-gray-600">Home</li>
           <li className="border-b border-gray-600">About</li>
           <li className="border-b border-gray-600">What I Do</li>
