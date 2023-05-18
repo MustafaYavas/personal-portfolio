@@ -20,7 +20,7 @@ const About = () => {
       <div className="my-10">
         <SectionHeader text="Know Me More" subText="about me" />
 
-        <div className="main grid grid-cols-1 md:grid-cols-5 gap-6 mt-10 md:mt-20">
+        <div className="main grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-20 mt-10 md:mt-20">
           <div
             className="col-span-3"
             data-aos="fade-right"
@@ -87,7 +87,7 @@ const About = () => {
         </div>
 
         <div
-          className="flex justify-center items-center gap-10 main"
+          className="flex justify-center items-center gap-10 main mt-20"
           style={{ color: 'var(--text-gray-2)' }}
           data-aos="fade-up"
           data-aos-once="true"
