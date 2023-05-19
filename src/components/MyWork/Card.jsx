@@ -3,55 +3,51 @@
 import Aos from 'aos';
 import { useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import styles from './Card.module.scss';
 import Icon from '../Icon';
-import Link from 'next/link';
 
-const Card = ({ img, title, text, stack, left, href, live }) => {
+const Card = ({ img, title, text, stack, className, href, live, full }) => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
 
-  let imgClass = `${
-    left
-      ? 'min-[992px]:order-1 min-[992px]:justify-start'
-      : 'min-[992px]:order-2 min-[992px]:justify-end'
-  }`;
-  let textClass = 'order-2 md:order-1';
-
   return (
     <div
-      className={`grid grid-cols-1 min-[992px]:grid-cols-2 md:px-28 mb-28 w-full ${styles.card}`}
-      data-aos={left ? 'fade-right' : 'fade-left'}
+      className={`${styles.card} ${className}`}
+      data-aos="fade-up"
       data-aos-once="true"
+      style={{
+        width: '425px',
+        height: '100%',
+      }}
     >
-      <div
-        className={`flex justify-center items-start mb-4 min-[992px]:mb-0 ${imgClass}`}
-      >
-        <Image
-          src={img}
-          alt="work"
-          className="w-full h-auto"
-          width={0}
-          height={0}
-          sizes="100vw"
-        />
-      </div>
-      <div className={`text-white h-full flex flex-col md:px-10 ${textClass}`}>
-        <h3 className="text-2xl font-semibold text-center">{title}</h3>
+      <Image
+        src={img}
+        alt="work"
+        className="w-full h-auto"
+        width={0}
+        height={0}
+        sizes="100vw"
+      />
 
-        <p className="mt-5 mb-10 text-center">{text}</p>
+      <div className={`text-white h-full flex flex-col ${styles['card-text']}`}>
+        <h3 className="text-xl md:text-2xl font-semibold text-center">
+          {title}
+        </h3>
 
-        <div className="flex-center gap-10 mb-10">
+        <p className="my-2 md:my-5 text-center text-bsae md:text-lg">{text}</p>
+
+        <div className="flex-center gap-10 mb-2 md:mb-5">
           {stack.map((s) => (
-            <span key={s} className="text-lg font-medium">
+            <span key={s} className="md:text-lg text-base font-medium">
               {s}
             </span>
           ))}
         </div>
 
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly gap-10">
           <Link href={href} target="_blank" className="flex-center gap-2">
             Code <Icon name="AiFillGithub" size="28" color="white" />
           </Link>
@@ -63,6 +59,14 @@ const Card = ({ img, title, text, stack, left, href, live }) => {
           )}
         </div>
       </div>
+
+      <Link
+        href={href}
+        className="md:hidden text-xl md:text-2xl font-semibold text-center text-white 
+        mt-2 mb-5"
+      >
+        {title}
+      </Link>
     </div>
   );
 };
