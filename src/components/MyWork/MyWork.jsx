@@ -41,8 +41,7 @@ const MyWork = () => {
 
             <div className="row-span-2 h-full">
               <Card
-                full
-                img="/assets/images/furniture.png"
+                img="/assets/images/furny.png"
                 title="Furny"
                 text="An e-commerce website where many products are listed in different categories. 
                 Users can purchase the products they add to the cart by registering."
@@ -64,8 +63,7 @@ const MyWork = () => {
               img="/assets/images/kanban-board.png"
               title="Kanban Board"
               text="It is a tool that allows you to visualize and manage your personal or team projects more easily. 
-                You can create your own project or join any of them and you can create new tasks for your project 
-                and assign it to a member."
+              You can create a new one or join and you can create new tasks and assign it."
               stack={['React.js', 'CSS']}
               href="https://github.com/MustafaYavas/kanban-board"
             />

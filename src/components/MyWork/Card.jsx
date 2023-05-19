@@ -8,14 +8,14 @@ import Link from 'next/link';
 import styles from './Card.module.scss';
 import Icon from '../Icon';
 
-const Card = ({ img, title, text, stack, className, href, live, full }) => {
+const Card = ({ img, title, text, stack, href, live }) => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
 
   return (
     <div
-      className={`${styles.card} ${className}`}
+      className={styles.card}
       data-aos="fade-up"
       data-aos-once="true"
       style={{
