@@ -14,7 +14,8 @@ const Card = ({ img, title, text, stack, href, live }) => {
   }, []);
 
   return (
-    <div
+    <Link
+      href={href}
       className={styles.card}
       data-aos="fade-up"
       data-aos-once="true"
@@ -22,6 +23,7 @@ const Card = ({ img, title, text, stack, href, live }) => {
         width: '425px',
         height: '100%',
       }}
+      target="_blank"
     >
       <Image
         src={img}
@@ -32,12 +34,16 @@ const Card = ({ img, title, text, stack, href, live }) => {
         sizes="100vw"
       />
 
-      <div className={`text-white h-full flex flex-col ${styles['card-text']}`}>
+      <div
+        className={`text-white h-full w-full flex flex-col ${styles['card-text']}`}
+      >
         <h3 className="text-xl md:text-2xl font-semibold text-center">
           {title}
         </h3>
 
-        <p className="my-2 md:my-5 text-center text-bsae md:text-lg">{text}</p>
+        <p className="my-2 md:my-5 text-center hidden md:block md:text-lg">
+          {text}
+        </p>
 
         <div className="flex-center gap-10 mb-2 md:mb-5">
           {stack.map((s) => (
@@ -59,15 +65,7 @@ const Card = ({ img, title, text, stack, href, live }) => {
           )}
         </div>
       </div>
-
-      <Link
-        href={href}
-        className="md:hidden text-xl md:text-2xl font-semibold text-center text-white 
-        mt-2 mb-5"
-      >
-        {title}
-      </Link>
-    </div>
+    </Link>
   );
 };
 

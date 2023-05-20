@@ -57,6 +57,7 @@ const MyWork = () => {
               text="A React.js application that lists movies from different categories"
               stack={['React.js', 'SASS']}
               href="https://github.com/MustafaYavas/movies-app"
+              live="https://mobees.vercel.app/"
             />
 
             <Card
