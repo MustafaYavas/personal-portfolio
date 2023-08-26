@@ -46,7 +46,7 @@ const About = () => {
               life. In this process, although I learned and interested in many
               different software languages, I developed myself mostly in
               JavaScript. I am currently in the field of Web Development. The
-              technologies I use the most are React.js, Nextçjs and Node.js. I
+              technologies I use the most are React.js, Next.js and Node.js. I
               have developed many different projects to improve myself in this
               field.
             </p>

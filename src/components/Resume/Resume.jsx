@@ -68,7 +68,7 @@ const Resume = () => {
               My Skills
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <SkillBar skill="HTML / CS" percent="90" left />
+              <SkillBar skill="HTML / CSS" percent="90" left />
               <SkillBar skill="JavaScript / TypeScript" percent="90" />
               <SkillBar skill="Node.js" percent="70" left />
               <SkillBar skill="React.js" percent="85" />
